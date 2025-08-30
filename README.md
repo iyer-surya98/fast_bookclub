@@ -13,13 +13,12 @@ A Goodreads-style web application built with FastAPI, Beanie (MongoDB ODM), and 
 
 ## Tech Stack
 
-- **FastAPI**: Web framework
-- **Beanie**: MongoDB ODM
-- **MongoDB**: Database
-- **FastAPI Users**: Authentication & user management
-- **Python 3.11**
-- **uv**: Python package manager & runner
-- **Google Books API**: For searching and adding books
+- [**FastAPI**](https://fastapi.tiangolo.com/)
+- **MongoDB**
+- [**Beanie**](https://github.com/BeanieODM/beanie): MongoDB ODM
+- [**FastAPI Users**](https://fastapi-users.github.io/fastapi-users/latest/): Authentication & user management
+- [**uv**]((https://github.com/astral-sh/uv)): Python package manager & runner
+- [**Google Books API**](https://developers.google.com/books/docs/overview): For searching and adding books
 
 ## Getting Started
 
@@ -33,7 +32,7 @@ A Goodreads-style web application built with FastAPI, Beanie (MongoDB ODM), and 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/fast-bookclub.git
+    git clone https://github.com/iyer-surya98/fast-bookclub.git
     cd fast-bookclub
     ```
 2. If you're using `uv`, running the following command will automatically create a virtual environment and install the required packages:
