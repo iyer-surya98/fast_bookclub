@@ -32,7 +32,7 @@ A Goodreads-style web application built with FastAPI, Beanie (MongoDB ODM), and 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/iyer-surya98/fast-bookclub.git
+    git clone https://github.com/iyer-surya98/fast_bookclub.git
     cd fast-bookclub
     ```
 2. If you're using `uv`, running the following command will automatically create a virtual environment and install the required packages:
