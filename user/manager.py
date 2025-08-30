@@ -3,11 +3,15 @@ from fastapi import Depends, Request
 from fastapi_users import BaseUserManager, FastAPIUsers, InvalidPasswordException
 from fastapi_users.db import BeanieUserDatabase, ObjectIDIDMixin
 from beanie import PydanticObjectId
-from ..db.setup import User, get_user_db
-from ..auth.backend import auth_backend
-from dotenv import get_key
+from db.setup import User, get_user_db
+from auth.backend import auth_backend
+from dotenv import get_key, find_dotenv
 
-SECRET = get_key("SECRET")
+dotenv_path = find_dotenv()
+SECRET = get_key(
+    dotenv_path=dotenv_path,
+    key_to_get="SECRET"
+)
 
 class UserManager(ObjectIDIDMixin, BaseUserManager[User, PydanticObjectId]):
     reset_password_token_secret = SECRET
